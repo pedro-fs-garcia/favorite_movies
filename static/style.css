@@ -1,0 +1,26 @@
+body{
+    max-width: 80%;
+    margin: 0 auto;
+    font-family:'Courier New', Courier, monospace;
+    background-color:rgb(223, 221, 218)
+}
+
+
+header{
+    text-align: center;
+}
+
+
+.header_img{
+    /* border: 2px solid black; */
+    height: 250px;
+    background-image:url(/static/images/The_apartment_header.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+footer{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}

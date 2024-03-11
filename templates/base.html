@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title> {% block title %} {% endblock %} </title>
+</head>
+<body>
+    <header>
+        <div class="header_img"></div>
+        <h1 style="margin: 6px auto 0">THE APARTMENT</h1>
+        <h3 style="margin-top:0">1960</h3>
+        <p>directed by: Billy Wilder | written by: Billy Wilder, I.A.L. Diamond | cast: Jack Lemmon, Shirley MacLaine</p>
+    </header>
+    <!-- conteudo da pagina aqui -->
+    {% block content %} {% endblock %}
+    <footer>
+        <h4>Todos os direitos reservados</h4>
+    </footer>
+</body>
+</html>
