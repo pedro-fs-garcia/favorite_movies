@@ -7,16 +7,28 @@
     <title> {% block title %} {% endblock %} </title>
 </head>
 <body>
-    <header>
-        <div class="header_img"></div>
-        <h1 style="margin: 6px auto 0">THE APARTMENT</h1>
-        <h3 style="margin-top:0">1960</h3>
-        <p>directed by: Billy Wilder | written by: Billy Wilder, I.A.L. Diamond | cast: Jack Lemmon, Shirley MacLaine</p>
-    </header>
-    <!-- conteudo da pagina aqui -->
-    {% block content %} {% endblock %}
+    <!-- header -->
+    
+    <!-- links -->
+    <div>
+        <span style="float:right; margin-block-start:10px;">
+            <a class="links" href="/">Home page</a> | 
+            <a class="links" href="directors">Directors</a> | 
+            <a class="links" href="all_films">All films</a> | 
+            <a class="links" href="my_attempts">My attempts</a>
+        </span>
+        <h1>My favorite movies</h1>
+    </div>
+    <hr>
+    {% block header_image %}{% endblock %}
+    
+    <!-- page content -->
+    {% block content %}{% endblock %}
+    
+    <!-- footer -->
     <footer>
-        <h4>Todos os direitos reservados</h4>
+        <h4>This website is an homage to that which I could not do</h4>
+        <a href =''>about the author</a>
     </footer>
 </body>
 </html>
