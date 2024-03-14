@@ -5,20 +5,20 @@ body{
     background-color:rgb(223, 221, 218)
 }
 
-
-header{
-    text-align: center;
+a{
+    text-decoration: none;
+    color:black
 }
 
 
-.header_index{
+.header_image{
+    text-align: center;
     height:250px;
-    background-image: url(/static/images/f-for-fake-1200.jpg);
+    /* background-image: url(/static/images/f-for-fake-1200.jpg); */
     background-size:auto;
     background-repeat: no-repeat;
-    background-position: center -160px;
+    /* background-position: center -160px; */
 }
-
 
 
 .links{
@@ -30,6 +30,17 @@ header{
     border: 2px solid black
 } */
 
+.row{
+    display:flex;
+    flex-wrap:wrap;
+    padding: 0px
+}
+
+.director_image{
+    height:150px;
+    width:auto;
+    text-align: center;
+}
 
 footer{
     font-family: 'Times New Roman', Times, serif;

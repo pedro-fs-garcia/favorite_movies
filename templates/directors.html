@@ -2,9 +2,36 @@
 
 {% block title %}Directors{% endblock %}
 
+{% block page_title %}Directors{% endblock %}
+
+{% block header_image %}<div class="header_image" style="background-image:url(/static/images/Directors.jpg);background-position:center;"></div> {% endblock %}
+
+
 {% block content %}
+    <h2>They take tha blame and hold the glory...</h2>
+
+    <p>this page does not frame the best directors, but serves the sole purpose of reminding myself of the ones that make me love the silver screen</p>
+    <p>My criteria are completely subjective...</p>
+
+    <div style="display:flex; flex-wrap:wrap;">
+
+        <figure style="text-align: center;"><a href="/directors/stanley_kubrick"><img class="director_image" src="/static/images/stanley_kubrick.jpg"><br>
+        Stanley Kubrick</a></figure>
+
+        <figure style="text-align: center;"><a href="/directors/david_fincher"><img class="director_image" src="/static/images/david_fincher.jpg"><br>
+        David Fincher</a></figure>
+
+        <figure style="text-align: center;"><a href="/directors/orson_welles"><img class="director_image" src="/static/images/f-for-fake-1200.jpg"><br>
+        Orson Welles</a></figure>
+
+        <figure style="text-align: center;"><a href="/directors/akira_kurosawa"><img class="director_image" src="/static/images/kurosawa.webp"><br>
+        Akira Kurosawa</a></figure>
+
+        <figure style="text-align: center;"><a href="/directors/billy_wilder"><img class="director_image" src="/static/images/billy_wilder.jpg"><br>
+        Billy Wilder</a></figure>
 
 
+    </div>
 
 
 {% endblock %}
