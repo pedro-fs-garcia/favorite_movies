@@ -42,6 +42,42 @@ a{
     text-align: center;
 }
 
+details{
+    background-color: #ccc7c7;
+    padding: 2px;
+    margin: 10px;
+    box-shadow: 2px 4px 20px #bbbbbb;
+}
+
+summary{
+    list-style-type:none;
+}
+
+.director_summary{
+    display:grid;
+    grid-template-columns:auto 1fr;
+    flex: 34px;
+    padding: 4px;
+    width: 100%;
+    background-color: #eeeeee;
+    border: none;
+    box-shadow: 1px 1px 6px #bbbbbb;
+    cursor:pointer;
+}
+
+.directors_films{
+    max-width:110%;
+    display:flex;
+    flex-wrap:wrap;
+    margin:0px;
+    border:2px solid black
+}
+
+.film_poster{
+    max-height: 200px;
+    text-align:center;
+}
+
 footer{
     font-family: 'Times New Roman', Times, serif;
     text-align: center;

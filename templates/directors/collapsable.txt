@@ -1,0 +1,266 @@
+
+
+<details>
+        <summary><h3 style="margin:2px">Akira Kurosawa</h3>
+            <div class="director_summary">
+            <div>
+                <img class="director_image" src="/static/images/akira_kurosawa.jpg">
+            </div>
+            <div style="margin:auto 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae repellendus perspiciatis natus reiciendis eaque repudiandae consectetur corrupti sequi blanditiis maiores, necessitatibus magnam, asperiores recusandae, aliquam esse? Quaerat quos aperiam reiciendis.</div>
+        </div>
+        </summary>
+        <div class="movie_posters">his main movies</div>
+    </details><br>
+
+<details>
+        <summary><h3 style="margin:2px">Stanley Kubrick</h3>
+            <div class="director_summary">
+            <div>
+                <img class="director_image" src="/static/images/stanley_kubrick.jpg">
+            </div>
+            <div style="margin:auto 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae repellendus perspiciatis natus reiciendis eaque repudiandae consectetur corrupti sequi blanditiis maiores, necessitatibus magnam, asperiores recusandae, aliquam esse? Quaerat quos aperiam reiciendis.</div>
+        </div>
+        </summary>
+        <div class="movie_posters">his main movies</div>
+    </details><br>
+
+<details>
+        <summary><h3 style="margin:2px">Orson Welles</h3>
+            <div class="director_summary">
+            <div>
+                <img class="director_image" src="/static/images/orson_welles.jpg">
+            </div>
+            <div style="margin:auto 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae repellendus perspiciatis natus reiciendis eaque repudiandae consectetur corrupti sequi blanditiis maiores, necessitatibus magnam, asperiores recusandae, aliquam esse? Quaerat quos aperiam reiciendis.</div>
+        </div>
+        </summary>
+        <div class="movie_posters">his main movies</div>
+    </details><br>
+
+<details>
+        <summary><h3 style="margin:2px">Billy Wilder</h3>
+            <div class="director_summary">
+            <div>
+                <img class="director_image" src="/static/images/billy_wilder.jpg">
+            </div>
+            <div style="margin:auto 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae repellendus perspiciatis natus reiciendis eaque repudiandae consectetur corrupti sequi blanditiis maiores, necessitatibus magnam, asperiores recusandae, aliquam esse? Quaerat quos aperiam reiciendis.</div>
+        </div>
+        </summary>
+        <div class="movie_posters">his main movies</div>
+    </details><br>
+
+<details>
+        <summary><h3 style="margin:2px">Martin Scorsese</h3>
+            <div class="director_summary">
+            <div>
+                <img class="director_image" src="/static/images/martin_scorsese.jpg">
+            </div>
+            <div style="margin:auto 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae repellendus perspiciatis natus reiciendis eaque repudiandae consectetur corrupti sequi blanditiis maiores, necessitatibus magnam, asperiores recusandae, aliquam esse? Quaerat quos aperiam reiciendis.</div>
+        </div>
+        </summary>
+        <div class="movie_posters">his main movies</div>
+    </details><br>
+
+<details>
+        <summary><h3 style="margin:2px">Buster Keaton</h3>
+            <div class="director_summary">
+            <div>
+                <img class="director_image" src="/static/images/buster_keaton.jpg">
+            </div>
+            <div style="margin:auto 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae repellendus perspiciatis natus reiciendis eaque repudiandae consectetur corrupti sequi blanditiis maiores, necessitatibus magnam, asperiores recusandae, aliquam esse? Quaerat quos aperiam reiciendis.</div>
+        </div>
+        </summary>
+        <div class="movie_posters">his main movies</div>
+    </details><br>
+
+<details>
+        <summary><h3 style="margin:2px">Ingmar Bergman</h3>
+            <div class="director_summary">
+            <div>
+                <img class="director_image" src="/static/images/ingmar_bergman.jpg">
+            </div>
+            <div style="margin:auto 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae repellendus perspiciatis natus reiciendis eaque repudiandae consectetur corrupti sequi blanditiis maiores, necessitatibus magnam, asperiores recusandae, aliquam esse? Quaerat quos aperiam reiciendis.</div>
+        </div>
+        </summary>
+        <div class="movie_posters">his main movies</div>
+    </details><br>
+
+<details>
+        <summary><h3 style="margin:2px">David Fincher</h3>
+            <div class="director_summary">
+            <div>
+                <img class="director_image" src="/static/images/david_fincher.jpg">
+            </div>
+            <div style="margin:auto 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae repellendus perspiciatis natus reiciendis eaque repudiandae consectetur corrupti sequi blanditiis maiores, necessitatibus magnam, asperiores recusandae, aliquam esse? Quaerat quos aperiam reiciendis.</div>
+        </div>
+        </summary>
+        <div class="movie_posters">his main movies</div>
+    </details><br>
+
+<details>
+        <summary><h3 style="margin:2px">David Lynch</h3>
+            <div class="director_summary">
+            <div>
+                <img class="director_image" src="/static/images/david_lynch.jpg">
+            </div>
+            <div style="margin:auto 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae repellendus perspiciatis natus reiciendis eaque repudiandae consectetur corrupti sequi blanditiis maiores, necessitatibus magnam, asperiores recusandae, aliquam esse? Quaerat quos aperiam reiciendis.</div>
+        </div>
+        </summary>
+        <div class="movie_posters">his main movies</div>
+    </details><br>
+
+<details>
+        <summary><h3 style="margin:2px">Paul Thomas Anderson</h3>
+            <div class="director_summary">
+            <div>
+                <img class="director_image" src="/static/images/paul_thomas_anderson.jpg">
+            </div>
+            <div style="margin:auto 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae repellendus perspiciatis natus reiciendis eaque repudiandae consectetur corrupti sequi blanditiis maiores, necessitatibus magnam, asperiores recusandae, aliquam esse? Quaerat quos aperiam reiciendis.</div>
+        </div>
+        </summary>
+        <div class="movie_posters">his main movies</div>
+    </details><br>
+
+<details>
+        <summary><h3 style="margin:2px">Hayao Miyazaki</h3>
+            <div class="director_summary">
+            <div>
+                <img class="director_image" src="/static/images/hayao_miyazaki.jpg">
+            </div>
+            <div style="margin:auto 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae repellendus perspiciatis natus reiciendis eaque repudiandae consectetur corrupti sequi blanditiis maiores, necessitatibus magnam, asperiores recusandae, aliquam esse? Quaerat quos aperiam reiciendis.</div>
+        </div>
+        </summary>
+        <div class="movie_posters">his main movies</div>
+    </details><br>
+
+<details>
+        <summary><h3 style="margin:2px">Park Chan Wook</h3>
+            <div class="director_summary">
+            <div>
+                <img class="director_image" src="/static/images/park_chan_wook.jpg">
+            </div>
+            <div style="margin:auto 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae repellendus perspiciatis natus reiciendis eaque repudiandae consectetur corrupti sequi blanditiis maiores, necessitatibus magnam, asperiores recusandae, aliquam esse? Quaerat quos aperiam reiciendis.</div>
+        </div>
+        </summary>
+        <div class="movie_posters">his main movies</div>
+    </details><br>
+
+<details>
+        <summary><h3 style="margin:2px">Ethan Coen Joel Coen</h3>
+            <div class="director_summary">
+            <div>
+                <img class="director_image" src="/static/images/ethan_coen_joel_coen.jpg">
+            </div>
+            <div style="margin:auto 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae repellendus perspiciatis natus reiciendis eaque repudiandae consectetur corrupti sequi blanditiis maiores, necessitatibus magnam, asperiores recusandae, aliquam esse? Quaerat quos aperiam reiciendis.</div>
+        </div>
+        </summary>
+        <div class="movie_posters">his main movies</div>
+    </details><br>
+
+<details>
+        <summary><h3 style="margin:2px">Robert Eggers</h3>
+            <div class="director_summary">
+            <div>
+                <img class="director_image" src="/static/images/robert_eggers.jpg">
+            </div>
+            <div style="margin:auto 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae repellendus perspiciatis natus reiciendis eaque repudiandae consectetur corrupti sequi blanditiis maiores, necessitatibus magnam, asperiores recusandae, aliquam esse? Quaerat quos aperiam reiciendis.</div>
+        </div>
+        </summary>
+        <div class="movie_posters">his main movies</div>
+    </details><br>
+
+<details>
+        <summary><h3 style="margin:2px">Damien Chazelle</h3>
+            <div class="director_summary">
+            <div>
+                <img class="director_image" src="/static/images/damien_chazelle.jpg">
+            </div>
+            <div style="margin:auto 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae repellendus perspiciatis natus reiciendis eaque repudiandae consectetur corrupti sequi blanditiis maiores, necessitatibus magnam, asperiores recusandae, aliquam esse? Quaerat quos aperiam reiciendis.</div>
+        </div>
+        </summary>
+        <div class="movie_posters">his main movies</div>
+    </details><br>
+
+<details>
+        <summary><h3 style="margin:2px">Satoshi Kon</h3>
+            <div class="director_summary">
+            <div>
+                <img class="director_image" src="/static/images/satoshi_kon.jpg">
+            </div>
+            <div style="margin:auto 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae repellendus perspiciatis natus reiciendis eaque repudiandae consectetur corrupti sequi blanditiis maiores, necessitatibus magnam, asperiores recusandae, aliquam esse? Quaerat quos aperiam reiciendis.</div>
+        </div>
+        </summary>
+        <div class="movie_posters">his main movies</div>
+    </details><br>
+
+<details>
+        <summary><h3 style="margin:2px">Alejandro Inarritu</h3>
+            <div class="director_summary">
+            <div>
+                <img class="director_image" src="/static/images/alejandro_inarritu.jpg">
+            </div>
+            <div style="margin:auto 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae repellendus perspiciatis natus reiciendis eaque repudiandae consectetur corrupti sequi blanditiis maiores, necessitatibus magnam, asperiores recusandae, aliquam esse? Quaerat quos aperiam reiciendis.</div>
+        </div>
+        </summary>
+        <div class="movie_posters">his main movies</div>
+    </details><br>
+
+<details>
+        <summary><h3 style="margin:2px">Bong Joon Ho</h3>
+            <div class="director_summary">
+            <div>
+                <img class="director_image" src="/static/images/bong_joon_ho.jpg">
+            </div>
+            <div style="margin:auto 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae repellendus perspiciatis natus reiciendis eaque repudiandae consectetur corrupti sequi blanditiis maiores, necessitatibus magnam, asperiores recusandae, aliquam esse? Quaerat quos aperiam reiciendis.</div>
+        </div>
+        </summary>
+        <div class="movie_posters">his main movies</div>
+    </details><br>
+
+<details>
+        <summary><h3 style="margin:2px">Quentin Tarantino</h3>
+            <div class="director_summary">
+            <div>
+                <img class="director_image" src="/static/images/quentin_tarantino.jpg">
+            </div>
+            <div style="margin:auto 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae repellendus perspiciatis natus reiciendis eaque repudiandae consectetur corrupti sequi blanditiis maiores, necessitatibus magnam, asperiores recusandae, aliquam esse? Quaerat quos aperiam reiciendis.</div>
+        </div>
+        </summary>
+        <div class="movie_posters">his main movies</div>
+    </details><br>
+
+<details>
+        <summary><h3 style="margin:2px">Lars Von Trier</h3>
+            <div class="director_summary">
+            <div>
+                <img class="director_image" src="/static/images/lars_von_trier.jpg">
+            </div>
+            <div style="margin:auto 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae repellendus perspiciatis natus reiciendis eaque repudiandae consectetur corrupti sequi blanditiis maiores, necessitatibus magnam, asperiores recusandae, aliquam esse? Quaerat quos aperiam reiciendis.</div>
+        </div>
+        </summary>
+        <div class="movie_posters">his main movies</div>
+    </details><br>
+
+<details>
+        <summary><h3 style="margin:2px">Alfonso Cuaron</h3>
+            <div class="director_summary">
+            <div>
+                <img class="director_image" src="/static/images/alfonso_cuaron.jpg">
+            </div>
+            <div style="margin:auto 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae repellendus perspiciatis natus reiciendis eaque repudiandae consectetur corrupti sequi blanditiis maiores, necessitatibus magnam, asperiores recusandae, aliquam esse? Quaerat quos aperiam reiciendis.</div>
+        </div>
+        </summary>
+        <div class="movie_posters">his main movies</div>
+    </details><br>
+
+<details>
+        <summary><h3 style="margin:2px">Benny Safdie Josh Safdie</h3>
+            <div class="director_summary">
+            <div>
+                <img class="director_image" src="/static/images/benny_safdie_josh_safdie.jpg">
+            </div>
+            <div style="margin:auto 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae repellendus perspiciatis natus reiciendis eaque repudiandae consectetur corrupti sequi blanditiis maiores, necessitatibus magnam, asperiores recusandae, aliquam esse? Quaerat quos aperiam reiciendis.</div>
+        </div>
+        </summary>
+        <div class="movie_posters">his main movies</div>
+    </details><br>
+
