@@ -10,7 +10,16 @@ def home_page():
 
 @app.route("/directors")
 def directors():
-    return render_template("directors.html")
+    with open('./templates/directors/names.txt') as file:
+        for line in file: names = line.split()
+    return render_template("directors.html", names=names)
+
+
+@app.route("/directors_test")
+def test():
+    with open('./templates/directors/names.txt') as file:
+        for line in file: names = line.split()
+    return render_template("directors_test.html", names=names)
 
 
 @app.route("/my_attempts")
