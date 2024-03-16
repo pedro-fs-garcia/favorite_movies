@@ -2,6 +2,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+
 @app.route("/")
 @app.route("/home")
 def home_page():
@@ -15,23 +16,16 @@ def directors():
     return render_template("directors.html", names=names)
 
 
-@app.route("/directors_test")
-def test():
-    with open('./templates/directors/names.txt') as file:
-        for line in file: names = line.split()
-    return render_template("directors_test.html", names=names)
-
-
-@app.route("/my_attempts")
-def my_attempts():
-    return render_template("my_attempts.html")
-
-
 @app.route("/all_films")
 def redirect_film():
     with open("./templates/directors/films.txt", "r") as file:
         for line in file: films = line.split()
     return render_template("all_films.html", films=films)
+
+
+@app.route("/my_attempts")
+def my_attempts():
+    return render_template("my_attempts.html")
 
 
 if __name__ == '__main__':
