@@ -2,7 +2,19 @@
 
 {% block title %}All films{% endblock %}
 
+{% block page_title %}All films{% endblock %}
+
 {% block content %}
+    <h2>The magic of cinema</h2>
+    <p>This is a business where the buyer gets nothing for his money but a memory...</p>
+    <div class="film_list">
+        {% for film in films %}
+            <figure style="text-align:center"><a href="" target="_blank">
+                <img class="film_poster" src="/static/images/{{film}}.jpg"><br>
+                {{film.replace("_", " ").title()}}
+            </a></figure>
+        {% endfor %}
+    </div>
 
 
 {% endblock %}

@@ -1,6 +1,6 @@
 body{
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 45px;
     font-family:'Courier New', Courier, monospace;
     background-color:rgb(223, 221, 218)
 }
@@ -77,6 +77,12 @@ summary{
     max-height: 200px;
     text-align:center;
 }
+
+.film_list{
+    display:flex;
+    flex-wrap: wrap;
+}
+
 
 footer{
     font-family: 'Times New Roman', Times, serif;
