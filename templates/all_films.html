@@ -5,12 +5,12 @@
 {% block page_title %}All films{% endblock %}
 
 {% block content %}
-    <h2>The magic of cinema</h2>
-    <p>This is a business where the buyer gets nothing for his money but a memory...</p>
-    <div class="film_list">
+<h3>But what is a good movie...</h3>
+<p>That question is yet to be answered with any real precision. For now, my preferences will suffice.</p>
+    <div class="film_grid">
         {% for film in films %}
-            <figure style="text-align:center"><a href="" target="_blank">
-                <img class="film_poster" src="/static/images/{{film}}.jpg"><br>
+            <figure class="film_item"><a href="" target="_blank">
+                <img class="film_poster" src="/static/images/films/{{film}}.jpg"><br>
                 {{film.replace("_", " ").title()}}
             </a></figure>
         {% endfor %}

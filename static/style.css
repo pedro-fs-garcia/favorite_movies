@@ -5,6 +5,16 @@ body{
     background-color:rgb(223, 221, 218)
 }
 
+.head{
+    margin-top: 10px;
+    height: 60px;
+    position:sticky;
+    top:0px;
+    background-color: rgb(223, 221, 218);
+    border-bottom: 2px outset #333131;
+}
+
+
 a{
     text-decoration: none;
     color:black
@@ -30,11 +40,6 @@ a{
     border: 2px solid black
 } */
 
-.row{
-    display:flex;
-    flex-wrap:wrap;
-    padding: 0px
-}
 
 .director_image{
     height:150px;
@@ -43,10 +48,10 @@ a{
 }
 
 details{
-    background-color: #ccc7c7;
+    background-color: #99928a;
     padding: 2px;
     margin: 10px;
-    box-shadow: 2px 4px 20px #bbbbbb;
+    box-shadow: 2px 4px 10px #333131;
 }
 
 summary{
@@ -59,30 +64,30 @@ summary{
     flex: 34px;
     padding: 4px;
     width: 100%;
-    background-color: #eeeeee;
+    background-color: #cac8c3;
     border: none;
-    box-shadow: 1px 1px 6px #bbbbbb;
+    box-shadow: 1px 1px 1px #bbbbbb;
     cursor:pointer;
 }
 
-.directors_films{
-    max-width:110%;
-    display:flex;
-    flex-wrap:wrap;
-    margin:0px;
-    border:2px solid black
-}
 
 .film_poster{
     max-height: 200px;
     text-align:center;
 }
 
-.film_list{
-    display:flex;
-    flex-wrap: wrap;
+.film_grid{
+    display:grid;
+    grid-template-columns:auto auto auto auto;
+    padding:0px;
 }
 
+.film_item{
+    text-align:center;
+    /* border:1px solid black; */
+    font-size:16px;
+
+}
 
 footer{
     font-family: 'Times New Roman', Times, serif;

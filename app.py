@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+import json
 
 app = Flask(__name__)
 
@@ -8,17 +9,15 @@ app = Flask(__name__)
 def home_page():
     return render_template("index.html")
 
-
 @app.route("/directors")
 def directors():
-    with open('./templates/directors/names.txt') as file:
-        for line in file: names = line.split()
-    return render_template("directors.html", names=names)
+    directors = json.load(open("./templates/directors.json"))
+    return render_template("directors.html", directors = directors)
 
 
 @app.route("/all_films")
 def redirect_film():
-    with open("./templates/directors/films.txt", "r") as file:
+    with open("./templates/all_films.txt", "r") as file:
         for line in file: films = line.split()
     return render_template("all_films.html", films=films)
 

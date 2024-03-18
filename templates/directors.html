@@ -8,24 +8,30 @@
 
 
 {% block content %}
-    <h2>They take tha blame and hold the glory...</h2>
+    <h2>They take the blame and hold the glory...</h2>
 
-    <p>this page does not frame the best directors, but serves the sole purpose of reminding myself of the ones that make me love the silver screen</p>
-    <p>My criteria are completely subjective...</p>
+    <p style="margin-left: 45px;">This list does not frame the best directors, nor should all good directors be framed here. Some have many movies in the list, others have only one. Some have none, and others that have many are not here. I, here, do not judge the movies, but the directing. For this serves the sole purpose of reminding myself of a few ones.</p>
+    <p style="margin-left: 45px;">My criteria are completely subjective...</p>
     <br>
 
     <div>
-        {% for name in names %}
+        {% for name in directors %}
             <details>
                 <summary><h3 style="margin:2px">{{name.replace("_", " ").title()}}</h3>
                     <div class="director_summary">
                     <div>
-                        <img class="director_image" src="/static/images/{{name}}.jpg">
+                        <img class="director_image" src="/static/images/directors/{{name}}.jpg">
                     </div>
                     <div style="margin:auto 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae repellendus perspiciatis natus reiciendis eaque repudiandae consectetur corrupti sequi blanditiis maiores, necessitatibus magnam, asperiores recusandae, aliquam esse? Quaerat quos aperiam reiciendis.</div>
                 </div>
                 </summary>
-                <div class="movie_posters">his main movies</div>
+                <div class="film_grid">
+                    {% for poster in directors[name] %}
+                        <figure class="film_item"><a href="#" target="_blank" style="text-align:center">
+                            <img class="film_poster" src="/static/images/films/{{poster.replace(' ', '_')}}.jpg"><br>{{poster.title()}}
+                        </a></figure>
+                    {% endfor %}
+                </div>
             </details><br>
         {% endfor %}
     </div>
