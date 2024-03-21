@@ -12,15 +12,14 @@ def home_page():
 
 @app.route("/directors")
 def directors():
-    directors = json.load(open("./templates/directors.json"))
+    directors = json.load(open("./templates/directors_films.json"))
     return render_template("directors.html", directors = directors)
 
 
 @app.route("/all_films")
 def redirect_film():
-    with open("./templates/all_films.txt", "r") as file:
-        for line in file: films = line.split()
-    return render_template("all_films.html", films=films)
+    directors = json.load(open("./templates/directors_films.json"))
+    return render_template("all_films.html", directors=directors)
 
 
 @app.route("/my_attempts")
@@ -29,4 +28,4 @@ def my_attempts():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port='5000')
+    app.run(host='0.0.0.0', port='5000', debug = True)

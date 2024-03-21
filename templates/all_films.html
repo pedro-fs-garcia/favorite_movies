@@ -10,11 +10,13 @@
 <h3>But what is a good movie...</h3>
 <p>That question is yet to be answered with any real precision. For now, my preferences will suffice.</p>
     <div class="film_grid">
-        {% for film in films %}
-            <figure class="film_item"><a href="" target="_blank">
-                <img class="film_poster" src="/static/images/films/{{film}}.jpg"><br>
-                {{film.replace("_", " ").title()}}
-            </a></figure>
+        {% for name in directors %}
+            {% for film in directors[name] %}
+                <figure class="film_item"><a href="" target="_blank">
+                    <img class="film_poster" src="/static/images/films/{{film.replace(' ', '_')}}.jpg"><br>
+                    {{film.title()}}
+                </a></figure>
+            {% endfor %}
         {% endfor %}
     </div>
 
