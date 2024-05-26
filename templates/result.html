@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Resultado{% endblock %}
+
+{% block page_title %}Aproveitamento{% endblock %}
+
+{% block content %}
+<br><br>
+<h1>Seu aproveitamento foi de <strong>{{porcentagem}}</strong></h1>
+
+<p>Número de acertos: {{acertos}}</p>
+<p>Número de erros: {{erros}}</p>
+
+{% endblock %}

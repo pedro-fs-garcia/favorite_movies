@@ -3,22 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">  
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css"> 
     <title> {% block title %} {% endblock %} </title>
-</head>
-<body>
+  </head>
+<body class="base_body container-fluid mt-3">
     <!-- header -->
-    
-    <!-- links -->
-    <div class="head">
-        <span style="float:right; margin-block-start:20px;">
-            <a class="links" href="/">Homepage</a> | 
-            <a class="links" href="/directors">Directors</a> | 
-            <a class="links" href="/all_films">All films</a> | 
-            <a class="links" href="/my_attempts">My attempts</a>
-        </span>
-        <h1>{% block page_title %} {% endblock %}</h1>
-    </div>
+    <div class="row" style="max-width:100%; background-color:rgb(223, 221, 218)">
+    <nav class="navbar fixed-top" style="width:90%; margin: auto; background-color: rgb(223, 221, 218); height:fit-content">
+      <h1><strong>{% block page_title %} {% endblock %}</strong></h1>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link {% block active_index %}{% endblock %}" href="/">Página Inicial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  {% block active_directors %}{% endblock %}" href="/directors">Diretores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  {% block active_all_films %}{% endblock %}" href="/all_films">Filmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {% block active_research %}{% endblock %}" href="/research">Pesquisa</a>
+            </li>
+            <li class="nav-item" style="margin-left: 10px;">
+              <form class="search-bar" action="/result" method="POST">
+                <label for="search">
+                  <input type="text" id="search" name="search" style="margin-top: 6px;">
+                </label>
+                <button type="submit" value="submit">Enviar</button>
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </div>
+        <br><br>
     <!-- <hr> -->
     {% block header_image %}{% endblock %}
     
@@ -27,9 +47,17 @@
     
     <!-- footer -->
     <hr>
-    <footer>
-        <h4>This page is an homage to that which I could not do</h4>
+    <footer class="base_footer">
+        <h4 style="font-size:20px">This page is an homage to that which I could not do</h4>
         <a href ='https://github.com/pedro-fs-garcia'>about the author</a>
     </footer>
-</body>
+    <script>
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+      })
+      </script>
+    <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

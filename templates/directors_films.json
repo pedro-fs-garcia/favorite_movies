@@ -26,7 +26,10 @@
 
     "billy_wilder":[
         "the apartment",
-        "some like it hot"
+        "some like it hot",
+        "ace in the hole",
+        "witness for the prosecution",
+        "double indemnity"
     ],
 
     "martin_scorsese":[
@@ -46,7 +49,8 @@
     ],
 
     "ingmar_bergman":[
-        "summer with monika"
+        "summer with monika",
+        "the seventh seal"
 
     ],
 
@@ -186,6 +190,12 @@
         "o homem que copiava",
         "the big short",
         "possession",
-        "collateral"
+        "collateral",
+        "shaun of the dead",
+        "heat",
+        "apocalypse now",
+        "lawrence of arabia",
+        "la dolce vitta"
+
     ]
 }

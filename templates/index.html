@@ -1,33 +1,62 @@
 {% extends "base.html" %}
 
-{% block title %}Home page{% endblock %}
-    
-    {% block page_title %}My favorite films{% endblock %}
-    
-    {% block header_image %}<header class="header_image" style="background-image:url(/static/images/directors/orson_welles.jpg); background-position: center -160px"></header>{% endblock %}
-    
-    
-    {% block content %}
-        <div>
-            <h2>Now it's time for an introduction...</h2>
-            <p style="margin-left: 45px;">Ladies and gentlemen, by way of introduction, this is a site about preferences, taste, about bias.</p>
-            <p style="margin-left: 45px;">Tell it by the fire side or in the market or in a movie, almost every list of favorites is almost certainly some kind of lie. But not this time. No, this is a promess: for your time in here, every thing you read is really true, and based only on my own preferences.</p>
-            <br>
-            <h3>The magic of cinema</h3>
-            <p style="margin-left: 45px">This is a business where the buyer gets nothing for his money but a memory...</p>
-    
+{% block title %}Grandes Filmes{% endblock %}
+
+{% block active_index %}active{% endblock %}
+
+{% block page_title %}Grandes Filmes{% endblock %}
+
+
+{% block header_image %}<header class="header_image row"
+    style="background-image:url(/static/images/directors/orson_welles.jpg); background-position: center -160px">
+</header>{% endblock %}
+
+
+{% block content %}
+
+
+<br><br>
+<div class="biography row">
+    <div class="col-11">
+        <h2>Esse é um negócio em que o cliente não leva nada além de uma lembrança</h2>
+        <p>O que ele comprou ainda pertence a quem vendeu. Essa é a verdadeira magia do cinema e não deixe ninguém dizer o contrário.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias saepe, reprehenderit, necessitatibus neque distinctio voluptatum ipsam possimus dolor a voluptates rem veniam illum qui sit iste! Dolore repudiandae modi dicta!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus aliquid inventore corporis esse fugit repellat aspernatur accusantium! Quibusdam minima reprehenderit nemo ab corporis facilis omnis quasi. Minima, placeat ullam.</p>
+        <br>
+        <h2>Não há nada no cinema que não possa ser ensinado em menos de uma semana...</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, nesciunt? Sequi,
+            reiciendis quia porro velit architecto, tempora at sit fuga adipisci dicta quaerat, blanditiis illo! Eos
+            nesciunt facilis et laboriosam?</p>
+    </div>
+    <div class="col-1">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel"
+            style="width:450px; text-align:center">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000" style="text-align:center">
+                    <img src="/static/images/films/the_apartment.jpg" style="height:400px"><br>
+                    <strong>The Apartment</strong>
+                </div>
+                {% for name in directors %}
+                    {% for film in directors[name] %}
+                        <div class="carousel-item" data-bs-interval="2000" style="text-align: center;">
+                            <img src="/static/images/films/{{film.replace(' ', '_')}}.jpg" style="height:400px"><br>
+                            <strong>{{film.title()}}</strong>
+                        </div>
+                    {% endfor %}
+                {% endfor %}
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
+    </div>
+</div>
 
-        <div>
-            
-        </div>
-
-
-
-
-
-        <div>
-   
-        </div>
-
-    {% endblock %}
+{% endblock %}
