@@ -1,5 +1,6 @@
 from flask import Flask, render_template, redirect, request, url_for
 import json
+import mysql.connector
 
 app = Flask(__name__)
 
@@ -40,6 +41,12 @@ def get_answer():
     return render_template("result.html", acertos=acertos, erros=erros, porcentagem=porcentagem)
 
 
+@app.route("/get_suggestion", methods=["POST", "GET"])
+def get_suggestion():
+    filme = request.form.get("movie_suggestion")
+    diretor = request.form.get("director_suggestion")
+    ano = request.form.get("year_suggestion")
+    return redirect("/sugestoes")
 
 
 if __name__ == '__main__':
