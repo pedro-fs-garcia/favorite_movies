@@ -1,15 +1,14 @@
 from flask import Flask, render_template, redirect, request, url_for
-import json
-import mysql.connector
-import database
+import json, database
+
 
 app = Flask(__name__)
 
 
 directors_films = {director:database.get_directors_movies(director) for director in database.get_directors()}
 perguntas = database.get_questions()
-# directors_films = json.load(open("./templates/directors_films.json", encoding = "UTF-8"))
-# perguntas = json.load(open("./templates/questions.json", encoding = "UTF-8"))
+# directors_films = json.load(open("./static/directors_films.json", encoding = "UTF-8"))
+# perguntas = json.load(open("./static/questions.json", encoding = "UTF-8"))
 
 @app.route("/")
 def home_page():
