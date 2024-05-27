@@ -1,13 +1,25 @@
-<h1>favorite films</h1>
-<p>A basic flask, html and css project made to list some of the best movies and directors.</p>
+# Como o cinema deve ser
 
-<h3>Main purpose</h3>
-<p>The main purpose of this project is to put to practice and apply recently acquired programming knowledge.</p>
+## Sobre o Projeto
+Este projeto é um site para exibir alguns dos filmes que definem como o cinema deve ser. O site foi desenvolvido utilizando Flask como framework de backend, com HTML, CSS e Bootstrap para a estrutura e estilização do frontend, e MySQL para gerenciamento do banco de dados. 
 
-<h3>knowledge acquired and applied:</h3>
-<ul>
-    <li>Flask</li>
-    <li>Use of python script to generate the list of films from a txt file in the page "all films" and the list of directors from a json file in the page "directors"</li>
-    <li>Use of Jinja template to extend a base html file and to write python script within the html file</li>
-    <li>HTML and CSS</li>
-</ul>
+## Tecnologias Utilizadas
+- **Flask**: Framework web para Python.
+- **HTML & CSS**: Para estruturação e estilização das páginas web.
+- **Bootstrap**: Framework CSS para desenvolvimento responsivo e rápido.
+- **MySQL**: Sistema de gerenciamento de banco de dados relacional.
+
+## Contribuindo
+Contribuições são bem-vindas! Para contribuir, siga os passos abaixo:
+1. Faça um fork do projeto.
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`).
+3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`).
+4. Faça o push para a branch (`git push origin feature/nova-feature`).
+5. Abra um Pull Request.
+
+## Licença
+Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## Contato
+- **Pedro Garcia** - [pedrofsgarcia.pro@gmail.com](mailto:pedrofsgarcia.pro@gmail.com)
+- **GitHub**: [Pedro Garcia](https://github.com/pedro-fs-garcia)
