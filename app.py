@@ -53,4 +53,4 @@ def get_suggestion():
 
 
 if __name__ == '__main__':
-    app.run(hdebug=True)
+    app.run()
