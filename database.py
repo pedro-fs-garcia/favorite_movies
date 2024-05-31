@@ -1,7 +1,7 @@
 import mysql.connector
 import sys
 
-config = {"user": f"{sys.argv[1]}", "password": f"{sys.argv[2]}", "host": "localhost", "database": "grandes_filmes"}
+config = {"user": f"pedro", "password": f"pssw", "host": "localhost", "database": "grandes_filmes"}
 
 
 def write_suggestion(movie, director, year):
