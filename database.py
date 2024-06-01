@@ -1,11 +1,12 @@
 import mysql.connector
 import sys
+import config
 
-config = {"user": f"{sys.argv[1]}", "password": f"{sys.argv[2]}", "host": "localhost", "database": "grandes_filmes"}
+configure = {"user": f"{config.DB_USER}", "password": f"{config.DB_PASSWORD}", "host": f"{config.DB_HOST}", "database": f"{config.DB_NAME}"}
 
 
 def write_suggestion(movie, director, year):
-    con = mysql.connector.connect(**config)
+    con = mysql.connector.connect(**configure)
     cur = con.cursor()
 
     query = "INSERT INTO sugestoes (filme, diretor, ano) VALUES (%s, %s, %s)"
@@ -18,7 +19,7 @@ def write_suggestion(movie, director, year):
 
 
 def get_directors_movies(director):
-    con = mysql.connector.connect(**config)
+    con = mysql.connector.connect(**configure)
     cur = con.cursor()    
     query = f"SELECT filme FROM filmes WHERE diretor='{director}'"
     cur.execute(query)
@@ -29,7 +30,7 @@ def get_directors_movies(director):
 
 
 def get_directors():
-    con = mysql.connector.connect(**config)
+    con = mysql.connector.connect(**configure)
     cur = con.cursor()    
     query = f"SELECT diretor FROM diretores"
     cur.execute(query)
@@ -40,7 +41,7 @@ def get_directors():
 
 
 def get_director_description(diretor):
-    con = mysql.connector.connect(**config)
+    con = mysql.connector.connect(**configure)
     cur = con.cursor()    
     query = f"SELECT descricao FROM diretores WHERE diretor='{diretor}'"
     cur.execute(query)
@@ -51,7 +52,7 @@ def get_director_description(diretor):
 
 
 def get_questions():
-    con = mysql.connector.connect(**config)
+    con = mysql.connector.connect(**configure)
     cur = con.cursor()    
     query = f"SELECT * FROM perguntas"
     cur.execute(query)

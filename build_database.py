@@ -1,4 +1,4 @@
-from database import config
+from database import configure
 import mysql.connector
 import json
 
@@ -6,7 +6,7 @@ directors_films = json.load(open("./static/directors_films.json", encoding = "UT
 perguntas = json.load(open("./static/questions.json", encoding = "UTF-8"))
 
 def write_directors():
-    con = mysql.connector.connect(**config)
+    con = mysql.connector.connect(**configure)
     cur = con.cursor()
 
     query = "INSERT INTO diretores (diretor, descricao) VALUES (%s, %s)"
@@ -20,7 +20,7 @@ def write_directors():
 
 
 def write_movies():
-    con = mysql.connector.connect(**config)
+    con = mysql.connector.connect(**configure)
     cur = con.cursor()
 
     query = "INSERT INTO filmes (filme, diretor, ano) VALUES (%s, %s, %s)"
@@ -34,7 +34,7 @@ def write_movies():
 
 
 def write_questions():
-    con = mysql.connector.connect(**config)
+    con = mysql.connector.connect(**configure)
     cur = con.cursor()
 
     query = "INSERT INTO perguntas (id, enunciado, alternativa_a, alternativa_b, alternativa_c, alternativa_d, correta, dica) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)"
