@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% block title %}Rating{% endblock %}
+
+{% block page_title %}Rating{% endblock %}
+
+{% block header_image %}<div class="header_image"
+    style="background-image:url(/static/images/thesocialnetwork2.jpg); background-position: center; background-size:cover;">
+</div> {% endblock %}
+
+{% block active_rating %}active{% endblock %}
+{% block content %}
+<br>
+<h2>Yea, it's on</h2>
+<p>...I like the idea of comparing two films together. It gives the whole thing a very "Turing" feel since people's
+    ratings of the films will be more implicit than choosing a number to represent each film's quality like they do on
+    IMDB.</p>
+<br>
+<div class="rating-title" id="filmmash-div">
+    <h1><strong>FILMMASH</strong></h1>
+</div>
+<br>
+<div class="justify-content-center">
+    <p class="d-flex justify-content-center">Which is better? Click to choose.</p>
+    <br>
+    <form action="/get_rating" class="filmmash" method="POST">
+        <div class="w-100 d-flex justify-content-center">
+            <div class="row w-75 d-flex justify-content-center">
+                <div class="col-5">
+                    <label for="option1">
+                        <div class="film_box" id="option1label" type="button">
+                            <img class="w-100" src="/static/images/films/{{film1[2]}}">
+                            <input type="radio" name="chooseoption" value="{{film1[1]}},1,{{film2[1]}},2" id="option1">
+                            <p class="d-flex justify-content-center"><strong>{{film1[0]}}</strong></p>
+                        </div>
+                    </label>
+                </div>
+                <div class="col-2 align-self-center">
+                    <p class="d-flex justify-content-center">OR</p>
+                </div>
+                <div class="col-5">
+                    <label for="option2">
+                        <div class="film_box" id="option2label" type="button">
+                            <img class="w-100" src="/static/images/films/{{film2[2]}}">
+                            <input type="radio" name="chooseoption" value="{{film2[1]}},2,{{film1[1]}},1" id="option2">
+                            <p class="d-flex justify-content-center"><strong>{{film2[0]}}</strong></p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <br>
+        <button class="btn w-100 active" type="submit" value="submit">Send choice</button>
+    </form>
+    <br><br>
+    <ul class="nav nav-pills nav-fill">
+        <li class="nav-item">
+            <a class="nav-link" href="/all_films">All Films</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/all_ratings">See all the ratings</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Compare Directors</a>
+        </li>
+    </ul>
+</div>
+
+<script src="/static/rating.js"></script>
+{% if cont %}
+<script>
+    function jump(h) {
+        var url = location.href;               //Save down the URL without hash.
+        location.href = "#" + h;                 //Go to the target element.
+        history.replaceState(null, null, url);   //Don't like hashes. Changing it back.
+    }
+    jump('filmmash-div');
+</script>
+{% endif %}
+{% endblock %}

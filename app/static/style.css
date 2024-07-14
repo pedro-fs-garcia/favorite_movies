@@ -1,0 +1,124 @@
+body{
+    max-width: 1200px;
+    margin: 0px auto 45px;
+    font-family:'Courier New', Courier, monospace;
+    background-color:rgb(223, 221, 218)
+}
+
+.head{
+    margin-top: 0px;
+    height: 60px;
+    position:sticky;
+    top:0px;
+    background-color: rgb(223, 221, 218);
+    border-bottom: 2px outset #333131;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    line-height:60px;
+}
+
+a{
+    text-decoration: none;
+    color:black
+}
+
+
+.header_image{
+    text-align: center;
+    height:250px;
+    /* background-image: url(/static/images/f-for-fake-1200.jpg); */
+    background-size:auto;
+    background-repeat: no-repeat;
+    /* background-position: center -160px; */
+}
+
+
+.links{
+    text-decoration: none;
+    color:black;
+}
+
+/* div{
+    border: 2px solid black
+} */
+
+
+.director_image{
+    height:150px;
+    width:auto;
+    text-align: center;
+}
+
+details{
+    background-color: #99928a;
+    padding: 2px;
+    margin: 10px;
+    box-shadow: 2px 4px 10px #333131;
+}
+
+summary{
+    list-style-type:none;
+}
+
+.director_summary{
+    display:grid;
+    grid-template-columns:auto 1fr;
+    flex: 34px;
+    padding: 4px;
+    width: 100%;
+    background-color: #cac8c3;
+    border: none;
+    box-shadow: 1px 1px 1px #bbbbbb;
+    cursor:pointer;
+}
+
+
+.film_poster{
+    max-height: 200px;
+    text-align:center;
+}
+
+.film_grid{
+    display:grid;
+    grid-template-columns:auto auto auto auto;
+    padding:0px;
+}
+
+.film_item{
+    text-align:center;
+    /* border:1px solid black; */
+    font-size:16px;
+
+}
+
+.rating-title{
+    background-color: #333131;
+    color: white;
+    text-align: center;
+}
+
+.filmmash [type=radio] {
+    opacity:0;
+    width:0;
+    height:0;
+}
+
+.selected-border{
+    border: #333131 2px solid;
+}
+
+.film_box{
+    padding:15px;
+    border-radius: 15px;
+}
+
+footer{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}

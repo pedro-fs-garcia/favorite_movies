@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+  <title> {% block title %}{% endblock %} </title>
+</head>
+
+<body class="base_body container-fluid mt-3">
+  <!-- header -->
+  <nav class="navbar navbar-expand-lg">
+      <h1><strong>{% block page_title %}{% endblock %}</strong></h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-bs-controls="navbarNav" aria-bs-expanded="false" aria-bs-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav nav-tabs ms-auto my-auto">
+          <li class="nav-item">
+            <a class="nav-link {% block active_index %}{% endblock %} text-dark" href="/">Homepage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  {% block active_directors %}{% endblock %} text-dark" href="/directors">Directors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  {% block active_all_films %}{% endblock %} text-dark" href="/all_films">Films</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% block active_research %}{% endblock %} text-dark" href="/research">Quiz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% block active_suggestions %}{% endblock %} text-dark"
+              href="/suggestions">Suggestions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% block active_rating %}{% endblock %} text-dark" href="/rating">Ratings</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+  <!-- <hr> -->
+  {% block header_image %}{% endblock %}
+
+  <!-- page content -->
+  {% block content %}{% endblock %}
+
+  <!-- footer -->
+  <hr>
+  <footer class="base_footer">
+    <h4 style="font-size:20px">This page is an homage to that which I could not do</h4>
+    <a href='https://github.com/pedro-fs-garcia'>about the author</a>
+  </footer>
+  <script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+  </script>
+  <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

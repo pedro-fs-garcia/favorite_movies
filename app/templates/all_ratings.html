@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% block title %}Rating{% endblock %}
+
+{% block page_title %}Rating{% endblock %}
+
+{% block header_image %}<div class="header_image"
+    style="background-image:url(/static/images/gladiator.jpg); background-position: center -30px; background-size:cover;">
+</div> {% endblock %}
+
+{% block active_rating %}active{% endblock %}
+{% block content %}
+<br>
+<h2>Are you not entertained?</h2>
+<br>
+<table class="table table-hover table-striped" id="ratingsTable" style="colo">
+    <thead>
+        <tr>
+            <th>Position</th>
+            <th>Film</th>
+            <th>Rating</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // A lista de tuplas enviada pelo Flask
+        const filmsRatings = {{ films_ratings | tojson | safe }};
+
+        // Função para criar a tabela
+        function createTable(filmsRatings) {
+            const tableBody = document.querySelector('#ratingsTable tbody');
+            tableBody.innerHTML = ''; // Clear existing table content
+
+            filmsRatings.forEach((filmRating, index) => {
+                const row = document.createElement('tr');
+                const positionCell = document.createElement('td');
+                const filmCell = document.createElement('td');
+                const ratingCell = document.createElement('td');
+
+                positionCell.textContent = index + 1;
+                filmCell.textContent = filmRating[0];
+                ratingCell.textContent = filmRating[1];
+
+                row.appendChild(positionCell);
+                row.appendChild(filmCell);
+                row.appendChild(ratingCell);
+                tableBody.appendChild(row);
+            });
+
+            // Inicializar DataTables após a tabela ser criada
+            $('#ratingsTable').DataTable({
+                "autoWidth": true,
+                "dom": '<"top"f>rt<"bottom"lp><"clear">',
+                "language": {
+                    "lengthMenu": "Mostrando _MENU_ entradas por página",
+                    "zeroRecords": "Nada encontrado",
+                    "info": "Mostrando página _PAGE_ de _PAGES_",
+                    "infoEmpty": "Nenhum registro disponível",
+                    "infoFiltered": "(filtrado de _MAX_ registros no total)",
+                    "search": "Pesquisar:",
+                    "paginate": {
+                        "first": "Primeiro",
+                        "last": "Último",
+                        "next": "Próximo",
+                        "previous": "Anterior"
+                    }
+                }
+            });
+        }
+
+        // Função para ordenar a lista por rating
+        function sortRatings(filmsRatings) {
+            return filmsRatings.sort((a, b) => b[1] - a[1]);
+        }
+
+        // Ordena e cria a tabela com os dados recebidos
+        const sortedRatings = sortRatings(filmsRatings);
+        createTable(sortedRatings);
+    });
+</script>
+
+
+{% endblock %}

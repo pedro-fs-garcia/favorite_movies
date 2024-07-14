@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}Pesquisa{% endblock %}
+
+{% block page_title %}Teste{% endblock %}
+{% block active_research %}active{% endblock %}
+
+{% block header_image %}{% endblock %}
+
+
+{% block content %}
+<br><br><br>
+<div class="quiz_page">
+
+    <h1 id="quiz_title">Teste seus conhecimentos cinematográficos</h1>
+    <br>
+    <form class="question_box" action="/get_answer" method="POST">
+        <label for="name">Seu nome:<input type="text" id="name" name="name"></label>
+        {% for key, value in perguntas.items() %}
+        <h3 class="num_question">Questão {{key}}</h3>
+
+        <p class="question_script">{{value[0]}}</p>
+
+        <div class="quiz_option">
+            <input type="radio" id="A{{key}}" name="answer{{key}}" value="A">
+            <label for="A{{key}}">{{value[1]}}</label>
+            <br>
+            <input type="radio" id="B{{key}}" name="answer{{key}}" value="B">
+            <label for="B{{key}}">{{value[2]}}</label>
+            <br>
+            <input type="radio" id="C{{key}}" name="answer{{key}}" value="C">
+            <label for="C{{key}}">{{value[3]}}</label>
+            <br>
+            <input type="radio" id="D{{key}}" name="answer{{key}}" value="D">
+            <label for="D{{key}}">{{value[4]}}</label>
+        </div>
+        <button type="button" class="btn" style="float:right" data-bs-toggle="popover"
+            title="Dica para resolver a questão" data-bs-content="{{value[6]}}">dica...</button>
+        <br><br>
+
+        {% endfor %}
+
+        <button type="submit" class="btn btn-lg active" value="submit">Enviar</button>
+    </form>
+
+</div>
+{% endblock %}

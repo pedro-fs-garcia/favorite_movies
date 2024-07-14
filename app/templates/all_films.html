@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Films{% endblock %}
+
+{% block page_title %}Films{% endblock %}
+
+{% block header_image %}<div class="header_image"
+    style="background-image:url(/static/images/the_apartment_header.jpg); background-position: center -10px;"></div> {%
+endblock %}
+
+{% block active_all_films %}active{% endblock %}
+{% block content %}
+
+<br>
+<h3>Whata are the great films...</h3>
+<p>That question is yet to be answered with any real precision.For now, my preferences will suffice.</p>
+<div class="row">
+    {% for director in directors_films %}
+    {% for film in directors_films[director] %}
+    <div class=" col-sm" style="margin-bottom: 30px;">
+        <div class="card" style="height:fit-content; width:190px; margin: auto; background-color: white">
+            <img src="/static/images/films/{{films_images[film]}}" class="card-img-top" alt="..." style="height:250px">
+            <div class="card-body">
+                <h5 class="card-title">{{film}}</h5>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    {%endfor%}
+</div>
+
+{% endblock %}

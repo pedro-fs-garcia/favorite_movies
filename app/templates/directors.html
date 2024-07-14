@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block title %}Directors{% endblock %}
+
+{% block page_title %}Directors{% endblock %}
+
+{% block header_image %}<div class="header_image" style="background-image:url(/static/images/Directors.jpg);background-position:center;"></div> {% endblock %}
+
+{% block active_directors %}active{% endblock %}
+
+{% block content %}
+<br>
+    <h2 id="diretores_titulo">They take the blame and hold the credit...</h2>
+    <p>Segundo Orson Welles, o escritor precisa de uma caneta, um pintor precisa de um pincel e um cineasta precisa de um exército.</p>
+    <p>Essa lista não comporta os melhores, nem deveriam todos os bons diretores estar aqui. Alguns têm muitos filmes na lista, outros têm um. Ainda outros têm nenhum, e outros têm muitos que não estão listados. Eu, aqui, não avalio os filmes, mas a direção. Pois isso serve ao único propósito de me lembrar de alguns poucos.</p>
+    <p>Meus critérios são totalmente subjetivos...</p>
+    <br>
+    
+        <div class="accordion" id="accordionExample">
+            {% for director in directors_films %}
+            {% if director != "Others" %}
+            <div class="card director_card">
+                <div class="card-header director_header" id="headingOne">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse{{director.replace(' ', '-')}}"
+                            aria-expanded="true" aria-controls="collapseOne" style="text-decoration: none; color:black">
+                            <h3 style="margin:2px; text-align:left">{{director}}</h3>
+                            <div class=" director_summary row">
+                                <div class="col-2">
+                                    <img class="director_image" src="/static/images/directors/{{directors_images[director]}}">
+                                </div>
+                                <div class="col-8" style="margin:auto">
+                                    <p style="margin:auto 15px; text-align: justify;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae repellendus perspiciatis natus reiciendis eaque repudiandae consectetur corrupti sequi blanditiis maiores, necessitatibus magnam, asperiores recusandae, aliquam esse? Quaerat quos aperiam reiciendis.</p>
+                                </div>
+                            </div>
+                        </button>
+                </div>
+                
+                <div id="collapse{{director.replace(' ', '-')}}" class="collapse" aria-labelledby="headingOne"
+                data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div class="row" >
+                            {% for film in directors_films[director] %}
+                            <figure class="film_item col-sm"><a href="#" target="_blank" style="text-align:center">
+                                <img class="film_poster" src="/static/images/films/{{films_images[film]}}"><br>{{film}}
+                            </a></figure>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            {% endif %}
+            {% endfor %}
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+
+
+
+{% endblock %}

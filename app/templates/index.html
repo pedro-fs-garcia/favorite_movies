@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block title %}Great Films{% endblock %}
+
+{% block active_index %}active{% endblock %}
+
+{% block page_title %}Great Films{% endblock %}
+
+
+{% block header_image %}<header class="header_image row"
+    style="background-image:url(/static/images/directors/orson_welles.jpg); background-position: center -160px">
+</header>{% endblock %}
+
+
+{% block content %}
+
+
+<br><br>
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col">
+            <h2>This is a business where the client takes nothing for his money but a memory...</h2>
+            <p>O que ele comprou ainda pertence a quem vendeu. Essa é a verdadeira magia do cinema e não deixe ninguém
+                dizer o contrário.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias saepe, reprehenderit, necessitatibus
+                neque distinctio voluptatum ipsam possimus dolor a voluptates rem veniam illum qui sit iste! Dolore
+                repudiandae modi dicta!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus aliquid inventore corporis
+                esse fugit repellat aspernatur accusantium! Quibusdam minima reprehenderit nemo ab corporis facilis
+                omnis quasi. Minima, placeat ullam.</p>
+            <br>
+        </div>
+        <div class="col-md-auto">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel"
+                style="width:450px; text-align:center">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000" style="text-align:center">
+                        <img src="/static/images/films/the_apartment.jpg" style="height:400px"><br>
+                        <strong>The Apartment</strong>
+                    </div>
+                    {% for director in directors_films %}
+                    {% for film in directors_films[director] %}
+                    <div class="carousel-item" data-bs-interval="2000" style="text-align: center;">
+                        <img src="/static/images/films/{{films_images[film]}}" style="height:400px"><br>
+                        <strong>{{film}}</strong>
+                    </div>
+                    {% endfor %}
+                    {% endfor %}
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    {% endblock %}

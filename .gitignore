@@ -3,3 +3,4 @@ venv/
 env/
 teste.py
 config.py
+database.txt
